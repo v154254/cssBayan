@@ -10,5 +10,6 @@
 }
 
 .radio:checked + .memes {
+    height: 38em;
     overflow: visible;
 }
