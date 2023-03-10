@@ -4,10 +4,11 @@
 }
 
 .memes {
+    display: block;
     height: 1em;
     overflow: hidden;
 }
 
-.memes:checked {
+.radio:checked + .memes {
     overflow: visible;
 }
