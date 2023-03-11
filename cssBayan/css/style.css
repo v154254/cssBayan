@@ -1,15 +1,49 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
 .container {
-    max-width: 320px;
+    max-width: 425px;
     margin: 0 auto;
+}
+
+.memes-container {
+    margin: 0 1em;
 }
 
 .memes {
     display: block;
-    height: 1em;
+    height: 2em;
     overflow: hidden;
 }
 
+.title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-xmark {
+    width: 1em;
+    transform: rotate(45deg);
+    transition-duration: 1s;
+}
+
+img {
+    width: 80%;
+    transform: scale(0, 0);
+    transition-duration: 1s;
+}
+
 .radio:checked + .memes {
-    height: 38em;
+    height: 20%;
     overflow: visible;
+}
+
+.radio:checked + .memes > img {
+    transform: scale(1, 1);
+}
+
+.radio:checked + .memes > .title-container > .fa-xmark {
+    transform: rotate(0);
 }
