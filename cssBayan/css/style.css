@@ -15,8 +15,9 @@ body {
     color: #0000ff
 }
 
-.memes-container:active > * {
+.memes:active > * {
     color: #0000ff;
+    opacity: 0.6;
 }
 
 .memes {
@@ -38,7 +39,7 @@ body {
 }
 
 img {
-    width: 80%;
+    width: 60%;
     transform: scale(0, 0);
     transition-duration: 1s;
 }
@@ -81,4 +82,48 @@ img {
 
 .radio:checked + .memes > .title-container > .fa-xmark {
     transform: rotate(0);
+}
+
+@media screen and (min-device-width: 600px) {
+    .container,
+    .container-main {
+    max-width: 70%;
+    margin: 0 auto;
+    }
+
+    .memes-container {
+    font-size: 1.8em;
+    }  
+
+    h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (min-device-width: 1024px) {
+    .container,
+    .container-main {
+    max-width: 50%;
+    margin: 0 auto;
+    }
+
+    .memes-container {
+    font-size: 2em;
+    }  
+}
+
+@media screen and (min-device-width: 1440px) {
+    .container,
+    .container-main {
+    max-width: 40%;
+    margin: 0 auto;
+    }
+
+    .memes-container {
+    font-size: 2.2em;
+    }  
+
+    h1 {
+        font-size: 2.6em;
+    }
 }
